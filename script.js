@@ -11,7 +11,7 @@ function downloadVideo() {
 
   status.innerText = 'Processing download... Please wait.';
 
-  fetch('http://localhost:3000/download', {
+  fetch('https://your-backend-url.onrender.com/download', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
