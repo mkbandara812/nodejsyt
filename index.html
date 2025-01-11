@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YT Converter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <i class="fab fa-youtube"></i>
+      <h1>YouTube Video to Short Video Converter</h1>
+    </div>
+    
+    <div class="form-group">
+      <label for="url">
+        <i class="fas fa-link"></i>
+        Video URL
+      </label>
+      <input type="text" id="url" placeholder="Paste YouTube video URL here...">
+    </div>
+
+    <div class="time-controls">
+      <div class="form-group">
+        <label for="start">
+          <i class="fas fa-hourglass-start"></i>
+          Start Time
+        </label>
+        <input type="number" id="start" placeholder="0">
+        <span class="unit">seconds</span>
+      </div>
+
+      <div class="form-group">
+        <label for="end">
+          <i class="fas fa-hourglass-end"></i>
+          End Time
+        </label>
+        <input type="number" id="end" placeholder="60">
+        <span class="unit">seconds</span>
+      </div>
+    </div>
+
+    <button onclick="downloadVideo()">
+      <i class="fas fa-download"></i>
+      Download Video
+    </button>
+
+    <div id="status" class="status"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
